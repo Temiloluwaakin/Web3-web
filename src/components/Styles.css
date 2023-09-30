@@ -1,0 +1,93 @@
+.header{
+    background: rgba(26, 26, 26, 0.6);
+    position: fixed;
+    height: 72px;
+    color: #ffff;
+    width: 94.4%;
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.right button{
+    background: #00BFE0;
+    height: 40px;
+    width: 148px;
+    color: #1a1a1a;
+    border-radius: 10px;
+    border: none;
+}
+.right button:hover{
+    background: #5fcfe2;
+    cursor: pointer;
+}
+
+.App-logo {
+    height: 48px;
+    width: 48px;
+    pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+    animation: App-logo-spin infinite 200s linear;
+}
+}
+  
+  
+@keyframes App-logo-spi {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////     FOOTER           /////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+.footer{
+    background: #1a1a1a;
+    color: #fff;
+    padding: 30px 0px;
+}
+.top-footer{
+    display: flex;
+    padding: 0px 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px ;
+    width: 90%;
+    margin: 0px 20px;
+}
+.lower-footer p{
+    font-size: 2px;
+    color: #a09c9c;
+}
+.footlinks{
+    margin: 0px;
+}
+a:hover{
+    color: #00BFE0;
+}
