@@ -57,6 +57,49 @@ to {
 
 
 
+
+
+@media (max-width: 660px) {
+    .right{
+        display: none;
+    }
+    .dropdowncaret{
+        display: block;
+    }
+}
+.dropdowncaret{
+    position: relative;
+}
+.dropdowncaret:hover{
+    color: #00BFE0;
+    cursor: pointer;
+}
+  
+.dropdowncaret .thedropdown{
+    position: absolute;
+    width: 75vw;
+    right: 0;
+    top: 30px;
+    background: #00bee09c;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    color: var(--white-color);
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    background: #00BFE0;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////     FOOTER           /////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////////////*/

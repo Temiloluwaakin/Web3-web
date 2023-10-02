@@ -4,14 +4,14 @@
 
 /*///////////////////////////////////////////////////////////////////////////////////////*/
 .first-frame{
-    height: 728px;
+    width: 100%;
     background: radial-gradient(#00D1F4, #061c20, #1a1a1a);
 }
 .text-bg{
     background: #1a1a1aaf;
-    height: 728px;
     font-family: sans-serif;
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     justify-content: space-evenly;
     color: white;
@@ -19,6 +19,7 @@
 .lft-txt{
     padding-top: 150px;
     padding-left: 64px;
+    flex: 40%;
     font-size: 29px;
     font-weight: 800;
 }
@@ -34,6 +35,7 @@
 }
 .rt-img{
     padding-top: 100px;
+    flex: 40%;
 }
 @media (prefers-reduced-motion: no-preference) {
     .first-frm-img{
@@ -57,6 +59,7 @@
 .second-frame{
     margin-top: 75px;
     text-align: center;
+    position: relative;
 }
 .second-frame h1{
     font-size: 40px;
@@ -67,25 +70,30 @@
 }
 .sf-slides{
     width: 90%;
-    height: 550px;
     margin: 50px auto;
     background: #0f0f0f;
     display: flex;
     color: #ffff;
+    flex-wrap: wrap;
     border-radius: 10px;
     align-items: center;
     overflow: hidden;
 }
 .sf-slides-txt{
     padding-left: 60px;
+    flex: 30%;
     padding-right: 50px;
     text-align: left;
+}
+.slide-images{
+    flex: 30%;
 }
 .sf-slides-txt button{
     width: 135px;
     height: 40px;
     border: 1px solid #00D1F4;
     border-radius: 10px;
+    margin-bottom: 30px;
     margin-top: 50px;
     font-size: 15px;
 }
@@ -111,16 +119,18 @@
 }
 .tf-slides{
     width: 90%;
-    height: 368px;
     margin: 50px auto;
     background: rgba(250, 250, 250, 1);
     display: flex;
+    flex-wrap: wrap;
     color: black;
     border-radius: 10px;
     align-items: center;
     overflow: hidden;
 }
 .boxx{
+    height: 100%;
+    width: 20%;
     padding-left: 60px;
     padding-right: 50px;
     text-align: left;
@@ -150,10 +160,19 @@
 /*///////////////////////////////////////////////////////////////////////////////////////*/
 .fourth-frame{
     display: flex;
+    flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.911);
     gap: 50px;
     color: white;
     padding: 50px 60px;
+}
+.mapimg{
+    max-width: 500px;
+    min-width: none;
+    flex: 50%;
+}
+.lt2{
+    flex: 50%;
 }
 .lt2 h2{
     margin-bottom: 5px;
@@ -185,4 +204,16 @@
 .fifth-frame button:hover{
     background: rgba(0, 0, 0, 0.76);
     cursor: pointer;
+}
+
+
+@media (max-width: 660px) {
+    .first-frame{
+        width: 100%;
+    }
+    .boxx{
+        text-align: center;
+        background: red;
+        width: 35%;
+    }
 }
