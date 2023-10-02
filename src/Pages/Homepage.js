@@ -1,4 +1,3 @@
-import Header from '../components/header';
 import "./Pagestyles.css"
 import image3 from '../images/image3.png'
 import slide1 from '../images/slide1.png'
@@ -15,8 +14,6 @@ import Footer from '../components/footer';
 const Homepage = () => {
     return (
         <div className="homepage">
-            <Header/>
-
             <div className='first-frame'>
                 <div className='text-bg'>
                     <div className='lft-txt'>

@@ -4,7 +4,7 @@
 
 /*///////////////////////////////////////////////////////////////////////////////////////*/
 .first-frame{
-    width: 100%;
+    width: inherit;
     background: radial-gradient(#00D1F4, #061c20, #1a1a1a);
 }
 .text-bg{
@@ -213,7 +213,10 @@
     }
     .boxx{
         text-align: center;
-        background: red;
-        width: 35%;
+        width: 70%;
+        margin: 0px auto;
+    }
+    .tf-slides{
+        gap: 10px;
     }
 }

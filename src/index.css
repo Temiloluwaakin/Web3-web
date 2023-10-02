@@ -1,9 +1,15 @@
 .App{
   position: relative;
 }
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
 
 @media (max-width: 660px) {
-  .App{
+  body{
     margin: 0px auto;
+    max-width: max-content;
   }
 }

@@ -1,21 +1,24 @@
 .header{
     background: rgba(26, 26, 26, 0.6);
     position: fixed;
-    height: 72px;
     color: #ffff;
-    width: 94.4%;
-    display: flex;
-    padding: 0px 30px;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     z-index: 999;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
+.header-content{
+    width: 90%;
+    padding: 10px 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 a{
     color: white;
-    text-decoration: none;
+    text-decoration: none ;
     margin: 0 20px;
 }
 
@@ -37,38 +40,10 @@ a{
     width: 48px;
     pointer-events: none;
 }
-  
-@media (prefers-reduced-motion: no-preference) {
-.App-logo {
-    animation: App-logo-spin infinite 200s linear;
-}
-}
-  
-  
-@keyframes App-logo-spi {
-from {
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(360deg);
-}
-}
 
-
-
-
-
-
-@media (max-width: 660px) {
-    .right{
-        display: none;
-    }
-    .dropdowncaret{
-        display: block;
-    }
-}
 .dropdowncaret{
     position: relative;
+    display: none;
 }
 .dropdowncaret:hover{
     color: #00BFE0;
@@ -99,6 +74,18 @@ to {
 .nav-link:hover{
     background: #00BFE0;
 }
+
+
+
+@media (max-width: 660px) {
+    .right{
+        display: none;
+    }
+    .dropdowncaret{
+        display: block;
+    }
+}
+
 
 /*///////////////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////     FOOTER           /////////////////////////////*/
