@@ -1,5 +1,6 @@
 .App{
   position: relative;
+  overflow: hidden;
 }
 body{
   margin: 0px;
@@ -11,5 +12,6 @@ body{
   body{
     margin: 0px auto;
     max-width: max-content;
+    overflow: hidden;
   }
 }
