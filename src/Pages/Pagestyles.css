@@ -219,4 +219,27 @@
     .tf-slides{
         gap: 10px;
     }
+    .fourth-frame{
+        padding: 20px;
+    }
+    .lt2{
+        width: 100%;
+    }
+    .mapimg{
+        width: 100%;
+
+    }
+    .slide-images{
+        width: 100%;
+    }
+    .lft-txt{
+        padding-left: 30px;
+    }
+    .rt-img{
+        padding-top: 30px;
+    }
+    .fifth-frame{
+        margin: 20px;
+        width: 90%;
+    }
 }

@@ -77,14 +77,7 @@ a{
 
 
 
-@media (max-width: 660px) {
-    .right{
-        display: none;
-    }
-    .dropdowncaret{
-        display: block;
-    }
-}
+
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////*/
@@ -97,6 +90,7 @@ a{
 }
 .top-footer{
     display: flex;
+    flex-wrap: wrap;
     padding: 0px 60px;
     justify-content: space-between;
     align-items: center;
@@ -120,4 +114,21 @@ a{
 }
 a:hover{
     color: #00BFE0;
+}
+
+
+
+
+
+
+@media (max-width: 660px) {
+    .right{
+        display: none;
+    }
+    .dropdowncaret{
+        display: block;
+    }
+    .top-footer{
+        padding: 20px;
+    }
 }
