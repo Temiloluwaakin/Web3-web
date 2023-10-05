@@ -21,7 +21,10 @@ a{
     text-decoration: none ;
     margin: 0 20px;
 }
-
+.right{
+    display: flex;
+    align-items: center;
+}
 .right button{
     background: #00BFE0;
     height: 40px;
@@ -45,20 +48,38 @@ a{
     position: relative;
     display: none;
 }
+.products{
+    position: relative;
+}
 .dropdowncaret:hover{
     color: #00BFE0;
     cursor: pointer;
 }
-  
+.products:hover{
+    color: #00BFE0;
+    cursor: pointer;
+}
 .dropdowncaret .thedropdown{
     position: absolute;
-    width: 75vw;
+    width: 25vw;
     right: 0;
     top: 30px;
     background: #00bee09c;
     color: #fff;
     text-align: center;
     font-size: 12px;
+}
+.products .thedropdown{
+    position: absolute;
+    width: 22vw;
+    left: 0px;
+    top: 25px;
+    background: rgba(26, 26, 26, 0.6);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+
 }
 
 .nav-link {
@@ -70,8 +91,28 @@ a{
     color: var(--white-color);
     transition: 0.5s;
 }
-
+.nav-link:active{
+    color: #00BFE0;
+}
 .nav-link:hover{
+    background: #00BFE0;
+}
+.prod-link {
+    display: block;
+    text-decoration: none;
+    background: rgba(26, 26, 26, 0.856);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    margin: 20px 20px;
+    border-radius: 10px;
+    color: var(--white-color);
+    transition: 0.5s;
+}
+.prod-link:active{
+    color: #00BFE0;
+}
+.prod-link:hover{
     background: #00BFE0;
 }
 
@@ -106,7 +147,7 @@ a{
     margin: 0px 20px;
 }
 .lower-footer p{
-    font-size: 2px;
+    font-size: 12px;
     color: #a09c9c;
 }
 .footlinks{

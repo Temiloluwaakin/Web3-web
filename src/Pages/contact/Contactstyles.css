@@ -1,0 +1,143 @@
+.first-frame{
+    width: inherit;
+    background: radial-gradient(#00D1F4, #061c20, #1a1a1a);
+}
+.text-bg{
+    background: #1a1a1aaf;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.lft-txt{
+    padding-top: 150px;
+    padding-left: 64px;
+    flex: 40%;
+    font-size: 34px;
+    font-weight: 800;
+}
+.chgcol{
+    color: #00D1F4;
+}
+.lft-txt p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #EDEDED;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+.rt-img{
+    padding-top: 100px;
+    flex: 40%;
+}
+.form-bg{
+    background: #fff;
+    border-radius: 10px;
+    width: 70%;
+    margin: 40px auto;
+    color: black;
+    padding: 40px 30px;
+}
+.form-bg h1{
+    margin-bottom: 50px;
+}
+input{
+    padding: 20px auto;
+    margin: 5px 0px 50px 0px;
+    width: 95%;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid #e2dfdf;
+}
+input::placeholder{
+    padding: 30px 20px;
+    color: #e2dfdf;
+    align-items: center;
+    align-self: center;
+    font-size: 17px;
+}
+.form-bg button{
+    width: 100%;
+    background: #161a1b;
+    padding: 20px 30px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+#resi{
+    height: 150px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+.reach-frame{
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto 60px auto;
+}
+.rt-reach{
+    flex: 40%;
+    padding-top: 106px;
+}
+.left-reach{
+    flex: 40%;
+}
+.left-reach h1{
+    font-size: 46px;
+    font-weight: 700;
+}
+.reachs{
+    margin-bottom:  50px;
+}
+.reachs a{
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+.reachs p{
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: 100;
+    color: #636262;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 660px) {
+    .contact{
+        align-self: center;
+    }
+    .text-bg{
+        gap: 50px;
+    }
+    .lft-txt{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .lft-txt p{
+        font-size: 20px;
+    }
+    .rt-img{
+        padding-top: 20px;
+    }
+    .rt-value{
+        padding-top: 10px;
+    }
+}

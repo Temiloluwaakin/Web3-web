@@ -1,13 +1,14 @@
 import "./Pagestyles.css"
-import image3 from '../images/image3.png'
-import slide1 from '../images/slide1.png'
-import slide2 from '../images/slide2.png'
-import slide3 from '../images/slide3.png'
-import sicons1 from '../images/sicons1.png'
-import sicons2 from '../images/sicons2.png'
-import sicons3 from '../images/sicons3.png'
-import map from '../images/map.png'
-import Footer from '../components/footer';
+import image3 from '../../images/image3.png'
+import slide1 from '../../images/slide1.png'
+import slide2 from '../../images/slide2.png'
+import slide3 from '../../images/slide3.png'
+import sicons1 from '../../images/sicons1.png'
+import sicons2 from '../../images/sicons2.png'
+import sicons3 from '../../images/sicons3.png'
+import map from '../../images/map.png'
+import Footer from '../../components/footer';
+import Gtt from "../../components/Gtt"
 
 
 
@@ -131,11 +132,12 @@ const Homepage = () => {
                 <div className='fifth-frame'>
                     <p className='chgcol'> GET IN TOUCH</p>
                     <h1>Accelerate your <span className='chgcol'>workflow</span> with us.</h1>
-                    <p style={{fontSize: '25px'}}>Have a questio or want more info? we will be happy to help.</p><br/>
+                    <p style={{fontSize: '25px'}}>Have a question or want more info? we will be happy to help.</p><br/>
                     <button>Contact Us</button>
                 </div>
 
                 <Footer/>
+                <Gtt />
             </div>
         </div>
     );

@@ -43,7 +43,7 @@ const Footer = () => {
                     <p><Link className='footlinks' to='#'>Lithium Capital</Link></p>
                 </div>
             </div>
-            <div className='lower-footer' style={{fontSize: '5px'}}>
+            <div className='lower-footer'>
                 <p>© 2023 Lithium Digital Reserved.</p>
                 <p>Terms & Conditions | Privacy Policy</p>
             </div>

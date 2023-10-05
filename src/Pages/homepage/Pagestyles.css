@@ -122,23 +122,22 @@
     margin: 50px auto;
     background: rgba(250, 250, 250, 1);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     color: black;
     border-radius: 10px;
-    align-items: center;
-    overflow: hidden;
 }
 .boxx{
-    height: 100%;
-    width: 20%;
     padding-left: 60px;
+    flex: 1;
     padding-right: 50px;
     text-align: left;
-    height: inherit;
     padding-top: 100px;
 }
 .boxx button{
     margin-top: 30px;
+    margin-bottom: 30px;
     background: none;
     border: none;
     color: #00D1F4;
@@ -207,9 +206,14 @@
 }
 
 
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 660px) {
     .first-frame{
         width: 100%;
+    }
+    .first-frm-img{
+        display: none;
     }
     .boxx{
         text-align: center;
