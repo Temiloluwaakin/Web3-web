@@ -2,10 +2,12 @@ import './Contactstyles.css'
 import Gtt from '../../components/Gtt'
 import Footer from '../../components/footer';
 import sicons1 from '../../images/sicons1.png'
+import Header from '../../components/header';
 
 const Contact = () => {
     return (
         <div className="contact">
+            <Header />
             <div className='first-frame'>
                 <div className='text-bg'>
                     <div className='lft-txt'>

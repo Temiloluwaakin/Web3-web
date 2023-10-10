@@ -3,10 +3,12 @@ import image3 from '../../images/image3.png'
 import sicons1 from '../../images/sicons1.png'
 import Footer from '../../components/footer';
 import Gtt from '../../components/Gtt';
+import Header from '../../components/header';
 
 const About = () => {
     return (
         <div className="about-us-page">
+            <Header/>
             <div className='first-frame'>
                 <div className='text-bg'>
                     <div className='lft-txt'>

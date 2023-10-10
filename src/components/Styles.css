@@ -98,25 +98,23 @@ a{
     background: #00BFE0;
 }
 .prod-link {
-    display: block;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
     text-decoration: none;
     background: rgba(26, 26, 26, 0.856);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 10px 20px;
     position: relative;
     margin: 20px 20px;
     border-radius: 10px;
     color: var(--white-color);
     transition: 0.5s;
 }
-.prod-link:active{
-    color: #00BFE0;
-}
 .prod-link:hover{
-    background: #00BFE0;
+    background: #051214;
 }
-
-
 
 
 

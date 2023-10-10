@@ -9,12 +9,14 @@ import sicons3 from '../../images/sicons3.png'
 import map from '../../images/map.png'
 import Footer from '../../components/footer';
 import Gtt from "../../components/Gtt"
+import Header from "../../components/header"
 
 
 
 const Homepage = () => {
     return (
         <div className="homepage">
+            <Header/>
             <div className='first-frame'>
                 <div className='text-bg'>
                     <div className='lft-txt'>

@@ -1,0 +1,64 @@
+.top-frame{
+    padding-top: 100px;
+    background: #1d1c1c;
+    padding-bottom: 100px;
+}
+.txt-bg{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.neww{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
+    background: #f8f6f6;
+}
+
+.api-card{
+    width: 330px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 30px;
+}
+.middle-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.last-card{
+    background: #f3f1f1;
+    padding: 10px;
+    border: 1px solid #dddbdb;
+    border-radius: 10px;
+}
+.middle-card button{
+    margin: 10px 10px 10px 0px;
+    padding: 10px 15px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.middle-card button:hover{
+    cursor: pointer;
+    border: 1px solid #3399ec;
+    background: #9abbd617;
+}
+
+@media (max-width: 660px) {
+    .api-card{
+        width: 80%;
+        align-items: center;
+        font-size: 14px;
+    }
+    .apis-bg{
+        width: 80%;
+        margin: 0px auto;
+    }
+}
