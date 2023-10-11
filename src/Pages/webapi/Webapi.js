@@ -104,12 +104,12 @@ const Webapi = () => {
                             </div>
                             <div className="last-card">
                                 <h4>Endpoint URL</h4>
-                                <div className="xx" style={{background: '#fff', display:'flex', padding:'15px',}}>
+                                <div className="xx" style={{background: '#fff', display:'flex', padding:'15px',justifyContent:'space-between'}}>
                                     {card.endpoints.map((e2) =>(
-                                        <div key={e2.id}>
-                                            {selectedEpname[card.id] === e2.epurl && <>{e2.epurl}</>}
+                                        <div key={e2.id} >
+                                            {selectedEpname[card.id] === e2.epurl && <span style={{flex:'20%'}}>{e2.epurl}</span >}
                                         </div>
-                                    ))} <div style={{paddingLeft:'60px'}}>copy</div>
+                                    ))} <span style={{flex:'5%', textAlign:'right'}}>copy</span>
                                 </div>
                                 <div style={{display:'flex', justifyContent:'space-between', marginTop:'30px'}}> 
                                     <span>Total requests (7 days)</span>
