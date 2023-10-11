@@ -1,15 +1,23 @@
 import { NavLink, Link } from "react-router-dom";
 import "./Styles.css"
 import logo from '../images/Logo.png';
-import Gtt from './Gtt';
+//import Gtt from './Gtt';
 import { slideToggle } from "./slideToggle/index.js"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import sicons2 from '../images/sicons2.png'
 
 const Header = () => {
 
-    const dropdowncaret = useRef(null);
+    //const dropdowncaret = useRef(null);
     const products = useRef(null);
+
+    const [showHidprod, setShowhidprod] = useState(false);
+    let [menuchage, setMenuchage] = useState(true) 
+    const handleHidprod = () => {
+        setShowhidprod(!showHidprod)
+        setMenuchage(!menuchage)
+    };
+
 
     return (
         <div className="header">
@@ -55,17 +63,24 @@ const Header = () => {
                 </div>
 
 
-                <div className='dropdowncaret' onClick={ () => slideToggle(dropdowncaret.current)}>
-                    <span style={ { fontSize: "20px", paddingBottom: "0px", marginLeft: "20px" } }><span className="drpd">menu</span></span>
-                    <div ref={dropdowncaret} className="target-div thedropdown" style={{ display: "none"}}>
-                        <Link to="/" className='nav-link'> Products </Link>
-                        <Link to="/about" className='nav-link'> About Us </Link>
-                        <Link to="/projects" className='nav-link'> Blogs </Link>
-                        <Link to="/contact" className='nav-link'> Contact Us </Link>
+
+                <span onClick={handleHidprod} className="menuff" >{menuchage ? 'menu' : 'X'}</span>
+                {showHidprod &&
+                    <div className="hidprod" style={{position:'absolute', top:'70px', display:'flex', paddingTop:'20px',
+                     flexDirection:'column', height:'100vh', width:'100vh', background:'#1314149c', left:'0'}}>
+                        <span style={{marginLeft:'20px'}}>Products</span >
+                        <span style={{display:'flex', flexDirection:'column', marginLeft:'20px'}}>
+                            <Link to='/webapi' className="nav-link">Lithium Web APIs</Link>
+                            <Link to='#' className="nav-link">Lithium Satking</Link>
+                            <Link to='/webapi' className="nav-link">Lithium Faucet</Link>
+                        </span>
+                        <NavLink to='/about' className='nav-link'>About Us</NavLink>
+                        <NavLink to='#' className='nav-link'>Blog</NavLink>
+                        <NavLink to='/contact' className='nav-link'>Contact Us</NavLink>
+                        <button className="menubtn">Get Started</button>
                     </div>
-                </div>
+                }
             </div>
-            <Gtt />
         </div>
     );
 }
